@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: darkcyan;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+ul{
+    display: none;
+}
+input:checked  ~ ul{
+    display:block;
+    position: absolute;
+}
+input {
+    display: none;
+
+}
+label {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(8, 124, 95);
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    
+}
+@media(min-width:600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media(min-width:600px){
+    label{
+        display: none;
+    }
+}
+label:hover{
+    background: rgb(9, 131, 131);
+}
+ul{
+    margin-top:36px;
+    padding: 0;
+    width: 200px;
+}
+
+
+li {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+@media(min-width:600px){
+    ul{
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+    margin-top: 0;
+}
+}
+a{
+    color: black;
+    width: 70px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    display:flex;
+}
